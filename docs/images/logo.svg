@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="56" fill="#FF7A59"/>
+  <!-- 後面的泡泡：Claude 在打字 -->
+  <rect x="104" y="26" width="128" height="94" rx="32" fill="#FFD25A"/>
+  <path d="M190 112 L224 142 L214 110 Z" fill="#FFD25A"/>
+  <circle cx="140" cy="73" r="9" fill="#B9741A"/>
+  <circle cx="168" cy="73" r="9" fill="#B9741A"/>
+  <circle cx="196" cy="73" r="9" fill="#B9741A"/>
+  <!-- 前面的泡泡：你的提示字元 -->
+  <rect x="22" y="92" width="156" height="112" rx="36" fill="#FFF6EE"/>
+  <path d="M50 192 L34 234 L94 200 Z" fill="#FFF6EE"/>
+  <path d="M54 124 L84 148 L54 172" stroke="#2B1D1A" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M100 172 H140" stroke="#2B1D1A" stroke-width="15" stroke-linecap="round"/>
+</svg>

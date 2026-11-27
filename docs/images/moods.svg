@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC',sans-serif">
+  <rect width="960" height="300" rx="24" fill="#FFF6EE"/>
+  <text x="480" y="44" text-anchor="middle" font-size="22" font-weight="700" fill="#5A3A22">Claude 在做什麼，角色一眼告訴你</text>
+
+  <!-- 1 working -->
+  <g transform="translate(30,70)">
+    <rect width="210" height="110" rx="20" fill="#FFFFFF" stroke="#E8D5C4" stroke-width="2"/>
+    <path d="M90 110 L105 132 L120 110 Z" fill="#FFFFFF" stroke="#E8D5C4" stroke-width="2"/>
+    <rect x="88" y="106" width="34" height="6" fill="#FFFFFF"/>
+    <text x="105" y="48" text-anchor="middle" font-size="18" fill="#333">正在改 api.ts～</text>
+    <text x="105" y="80" text-anchor="middle" font-size="14" fill="#999">edit</text>
+    <circle cx="105" cy="180" r="26" fill="#FFD25A"/>
+    <text x="105" y="188" text-anchor="middle" font-size="22">✍️</text>
+    <text x="105" y="225" text-anchor="middle" font-size="16" font-weight="700" fill="#5A3A22">工作中</text>
+  </g>
+
+  <!-- 2 ask -->
+  <g transform="translate(260,70)">
+    <rect width="210" height="110" rx="20" fill="#FFFFFF" stroke="#4A90E2" stroke-width="3"/>
+    <path d="M90 110 L105 132 L120 110 Z" fill="#FFFFFF" stroke="#4A90E2" stroke-width="3"/>
+    <rect x="88" y="105" width="34" height="7" fill="#FFFFFF"/>
+    <text x="105" y="48" text-anchor="middle" font-size="18" fill="#333">前輩，等你按允許</text>
+    <text x="105" y="80" text-anchor="middle" font-size="14" fill="#999">ask</text>
+    <circle cx="105" cy="180" r="26" fill="#CFE3FA"/>
+    <text x="105" y="188" text-anchor="middle" font-size="22">🙏</text>
+    <text x="105" y="225" text-anchor="middle" font-size="16" font-weight="700" fill="#5A3A22">等你確認</text>
+  </g>
+
+  <!-- 3 risk -->
+  <g transform="translate(490,70)">
+    <rect width="210" height="110" rx="20" fill="#FFFFFF" stroke="#E2574C" stroke-width="3"/>
+    <path d="M90 110 L105 132 L120 110 Z" fill="#FFFFFF" stroke="#E2574C" stroke-width="3"/>
+    <rect x="88" y="105" width="34" height="7" fill="#FFFFFF"/>
+    <text x="105" y="48" text-anchor="middle" font-size="18" fill="#333">要刪整個資料夾！</text>
+    <text x="105" y="80" text-anchor="middle" font-size="14" fill="#999">risk</text>
+    <circle cx="105" cy="180" r="26" fill="#F9D0CC"/>
+    <text x="105" y="188" text-anchor="middle" font-size="22">⚠️</text>
+    <text x="105" y="225" text-anchor="middle" font-size="16" font-weight="700" fill="#5A3A22">危險指令</text>
+  </g>
+
+  <!-- 4 feel -->
+  <g transform="translate(720,70)">
+    <rect width="210" height="110" rx="20" fill="#FFFFFF" stroke="#E8D5C4" stroke-width="2"/>
+    <path d="M90 110 L105 132 L120 110 Z" fill="#FFFFFF" stroke="#E8D5C4" stroke-width="2"/>
+    <rect x="88" y="106" width="34" height="6" fill="#FFFFFF"/>
+    <text x="105" y="48" text-anchor="middle" font-size="18" fill="#333">弄好了～快誇我嘛</text>
+    <text x="105" y="80" text-anchor="middle" font-size="14" fill="#999">feel · 害羞</text>
+    <circle cx="105" cy="180" r="26" fill="#FFD9E2"/>
+    <text x="105" y="188" text-anchor="middle" font-size="22">☺️</text>
+    <text x="105" y="225" text-anchor="middle" font-size="16" font-weight="700" fill="#5A3A22">做完了</text>
+  </g>
+</svg>

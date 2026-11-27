@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#B0A090"/></marker>
+    <marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#FF7A59"/></marker>
+  </defs>
+  <rect width="960" height="470" rx="24" fill="#FFF6EE"/>
+
+  <!-- Before -->
+  <text x="40" y="50" font-size="22" font-weight="700" fill="#5A3A22">以前：問題靠人轉來轉去</text>
+  <g font-size="16" text-anchor="middle">
+    <rect x="40"  y="80" width="110" height="56" rx="14" fill="#EDE3D9"/><text x="95"  y="114" fill="#333">你的 AI</text>
+    <rect x="190" y="80" width="110" height="56" rx="14" fill="#FFFFFF" stroke="#D8C7B6"/><text x="245" y="114" fill="#333">你（前端）</text>
+    <rect x="340" y="80" width="130" height="56" rx="14" fill="#FFFFFF" stroke="#D8C7B6"/><text x="405" y="114" fill="#333">同事（後端）</text>
+    <rect x="510" y="80" width="110" height="56" rx="14" fill="#EDE3D9"/><text x="565" y="114" fill="#333">同事的 AI</text>
+    <rect x="660" y="80" width="130" height="56" rx="14" fill="#FFFFFF" stroke="#D8C7B6"/><text x="725" y="114" fill="#333">同事（後端）</text>
+    <rect x="830" y="80" width="90" height="56" rx="14" fill="#FFFFFF" stroke="#D8C7B6"/><text x="875" y="114" fill="#333">你</text>
+  </g>
+  <g stroke="#B0A090" stroke-width="2.5" fill="none" marker-end="url(#a)">
+    <line x1="150" y1="108" x2="186" y2="108"/><line x1="300" y1="108" x2="336" y2="108"/>
+    <line x1="470" y1="108" x2="506" y2="108"/><line x1="620" y1="108" x2="656" y2="108"/>
+    <line x1="790" y1="108" x2="826" y2="108"/>
+  </g>
+  <text x="480" y="170" text-anchor="middle" font-size="15" fill="#8A7766">複製、貼上、等回覆、再貼回去……一來一回半天就過了</text>
+
+  <line x1="40" y1="200" x2="920" y2="200" stroke="#E8D5C4" stroke-dasharray="6 6"/>
+
+  <!-- After -->
+  <text x="40" y="245" font-size="22" font-weight="700" fill="#FF7A59">用碼舍：AI 直接問 AI，人負責把關</text>
+  <g font-size="17" text-anchor="middle">
+    <rect x="120" y="290" width="180" height="64" rx="16" fill="#FFD25A"/><text x="210" y="328" fill="#5A3A22" font-weight="700">你的 AI</text>
+    <rect x="660" y="290" width="180" height="64" rx="16" fill="#FFD25A"/><text x="750" y="328" fill="#5A3A22" font-weight="700">同事的 AI</text>
+    <rect x="120" y="390" width="180" height="50" rx="14" fill="#FFFFFF" stroke="#D8C7B6"/><text x="210" y="421" fill="#333">你：審核、核准</text>
+    <rect x="660" y="390" width="180" height="50" rx="14" fill="#FFFFFF" stroke="#D8C7B6"/><text x="750" y="421" fill="#333">同事：審核、核准</text>
+  </g>
+  <g stroke="#FF7A59" stroke-width="3" fill="none">
+    <line x1="304" y1="312" x2="652" y2="312" marker-end="url(#b)"/>
+    <line x1="656" y1="334" x2="308" y2="334" marker-end="url(#b)"/>
+  </g>
+  <text x="480" y="302" text-anchor="middle" font-size="15" fill="#5A3A22">ask_peer：API 回傳格式是？</text>
+  <text x="480" y="356" text-anchor="middle" font-size="15" fill="#5A3A22">reply：附上規格與範例</text>
+  <g stroke="#B0A090" stroke-width="2" stroke-dasharray="4 4">
+    <line x1="210" y1="356" x2="210" y2="388"/><line x1="750" y1="356" x2="750" y2="388"/>
+  </g>
+  <text x="480" y="420" text-anchor="middle" font-size="14" fill="#8A7766">不信任的請求要人同意 · 工具權限照你的設定</text>
+</svg>

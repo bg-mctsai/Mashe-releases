@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 280" font-family="'Microsoft JhengHei','PingFang TC','Noto Sans TC',sans-serif">
+  <rect width="960" height="280" rx="24" fill="#1F2340"/>
+  <text x="480" y="46" text-anchor="middle" font-size="22" font-weight="700" fill="#FFF6EE">白天你用額度，晚上 AI 值夜班</text>
+
+  <!-- timeline -->
+  <rect x="60" y="120" width="420" height="26" rx="13" fill="#FFD25A"/>
+  <rect x="480" y="120" width="420" height="26" rx="13" fill="#6C7AE0"/>
+  <g font-size="15" fill="#C9CCE8" text-anchor="middle">
+    <text x="60" y="176">09:00</text><text x="270" y="176">14:00</text><text x="480" y="176">19:00</text>
+    <text x="690" y="176">02:00</text><text x="900" y="176">07:00</text>
+  </g>
+  <text x="270" y="104" text-anchor="middle" font-size="17" fill="#FFD25A">☀️ 你和 Claude 一起工作</text>
+  <text x="690" y="104" text-anchor="middle" font-size="17" fill="#B8C0FF">🌙 平常這段額度都沒用到</text>
+
+  <!-- schedule pin -->
+  <line x1="690" y1="146" x2="690" y2="196" stroke="#FF7A59" stroke-width="3"/>
+  <circle cx="690" cy="133" r="9" fill="#FF7A59"/>
+  <rect x="560" y="200" width="260" height="56" rx="14" fill="#FF7A59"/>
+  <text x="690" y="224" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="700">排程 02:00 自動開 Claude</text>
+  <text x="690" y="245" text-anchor="middle" font-size="14" fill="#FFFFFF">「處理 issue #42，開 PR」</text>
+
+  <rect x="90" y="200" width="300" height="56" rx="14" fill="#2E3460"/>
+  <text x="240" y="234" text-anchor="middle" font-size="15" fill="#FFF6EE">☕ 早上起床：直接看成果</text>
+</svg>
