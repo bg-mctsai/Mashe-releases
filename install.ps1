@@ -5,6 +5,21 @@
 # Releases up to v1.6.0 were published without SHA256SUMS: for those it warns and continues. A newer release without it stops.
 $ErrorActionPreference = 'Stop'
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
+
+# Downloads to a file. Errors without an HTTP response (Windows PowerShell 5.1 sometimes reuses a connection GitHub
+# already closed: "The underlying connection was closed") are retried up to 3 times; HTTP errors such as 404 are thrown.
+function Invoke-MasheDownload([string]$uri, [string]$outFile) {
+  for ($attempt = 1; ; $attempt++) {
+    try {
+      Invoke-WebRequest $uri -OutFile $outFile -UseBasicParsing
+      return
+    } catch {
+      if ($_.Exception.Response -or $attempt -ge 3) { throw }
+      Start-Sleep -Seconds $attempt
+    }
+  }
+}
+
 $tag = (Invoke-RestMethod 'https://api.github.com/repos/bg-mctsai/Mashe-releases/releases/latest' -UseBasicParsing).tag_name
 if ($tag -notmatch '^v\d+\.\d+\.\d+$') { throw "Unexpected release tag: $tag" }
 $base = "https://github.com/bg-mctsai/Mashe-releases/releases/download/$tag"
@@ -12,10 +27,10 @@ $id = [Guid]::NewGuid().ToString('N')
 $script = Join-Path $env:TEMP ('MaBao-install-' + $id + '.ps1')
 $sumsFile = Join-Path $env:TEMP ('MaBao-install-' + $id + '.sha256')
 try {
-  Invoke-WebRequest "$base/install.ps1" -OutFile $script -UseBasicParsing
+  Invoke-MasheDownload "$base/install.ps1" $script
   $hasSums = $true
   try {
-    Invoke-WebRequest "$base/SHA256SUMS" -OutFile $sumsFile -UseBasicParsing
+    Invoke-MasheDownload "$base/SHA256SUMS" $sumsFile
   } catch {
     # Windows PowerShell 5.1 throws WebException, PowerShell 7 throws HttpResponseException; both expose Response.StatusCode
     $response = $_.Exception.Response
