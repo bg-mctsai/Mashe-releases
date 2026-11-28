@@ -140,7 +140,7 @@ irm https://raw.githubusercontent.com/bg-mctsai/Mashe-releases/main/install.ps1 
 | 項目 | 必要性 |
 | --- | --- |
 | Windows 10 / 11 | 必要 |
-| [Claude Code](https://docs.claude.com/en/docs/claude-code) | 必要 |
+| [Claude Code](https://docs.claude.com/en/docs/claude-code) | 排程、從碼舍選單開 Claude 時需要。只用 Cursor 時，角色狀態和碼舍直連一樣能用 |
 | Windows Terminal | 從碼舍選單開 Claude 時需要 |
 | Node.js | 使用碼舍直連、請 Claude 設排程時需要 |
 | WebView2 Runtime | 開碼舍日報、徽章旅程、官方作品時需要。Windows 11 已內建 |
